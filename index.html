@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <title>GHANA NAMING CULTURE</title>
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-md-8 col-5 offset-2">
+            <form action="">
+                <div class="mb-3">
+                    <label for="time" class="form-label">Date of birth</label>
+                    <input type="date" class="form-control" name="" required id="time">
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" id="male" value="male" name="gender">
+                    <label class="form-check-label" for="male">
+                        Male
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" value="female" id="female" name="gender" checked>
+                    <label class="form-check-label" for="female">
+                        Female
+                    </label>
+                </div>
+                <br>
+                <button class="btn btn-primary" type="submit">Get Nickname</button>
+            </form>
+            <br><br>
+            <span class="alert alert-primary" id="my-nickname"> Nickname Will appear here</span>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+    <script>
+        var male = ["Kwasi", " Kwadwo", "Kwabena", " Kwaku", "Yaw", " Kofi", " Kwame"]
+        var female = ["Akosua", "  Adwoa", "Abenaa", " Akua", "Yaa", " Afua", "Ama"]
+
+        $("form").submit(function (event) {
+            event.preventDefault();
+            var date = new Date($("#time").val())
+            if ($(":checked").val() == "male") {
+                //console.log(male[date.getDay()])
+                $("#my-nickname").text(male[date.getDay()])
+            } else {
+                $("#my-nickname").text(female[date.getDay()])
+            }
+
+            //console.log(date.getDay())
+        })
+    </script>
+
+</body>
+
+</html>
