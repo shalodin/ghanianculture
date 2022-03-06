@@ -35,7 +35,7 @@
 
 - CSS - which was used to style the pages incuding the left aside navigation bar
 
--JS-which was used to enter variables
+-JS -which was used to enter variables
 
 ## Reference
 
