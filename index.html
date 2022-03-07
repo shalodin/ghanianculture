@@ -11,36 +11,45 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
     <title>GHANA NAMING CULTURE</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-    <p>This is a project on Ghana's naming culture where people are named according to their birthdays.</p>
+    <h1>FIND YOUR AKAN NAME</h1>
     <div class="row">
         <div class="col-md-8 col-5 offset-2">
             <form action="">
-                <div class="mb-3">
-                    <label for="time" class="form-label">Date of birth</label>
-                    <input type="date" class="form-control" name="" required id="time">
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" id="male" value="male" name="gender">
-                    <label class="form-check-label" for="male">
-                        Male
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" value="female" id="female" name="gender" checked>
-                    <label class="form-check-label" for="female">
-                        Female
-                    </label>
-                </div>
-                <br>
-                <button class="btn btn-primary" type="submit">Get Nickname</button>
-            </form>
-            <br><br>
-            <span class="alert alert-primary" id="my-nickname"> Nickname Will appear here</span>
+                <p>Ghanaian names (or personal names in Ghana) consist of several given names and surnames based on the
+                    language of ethnic groups in Ghana: including Akan, Mole-Dagombas, Ga, Ewe and Nzema. Frequently,
+                    children are given a "day name" which corresponds to the day in the week when they were born.
+
+                </p>
+                <div class="date">
+                    <div class="mb-3">
+                        <label for="time" class="form-label">Date of birth</label>
+                        <input type="date" class="form-control" name="" required id="time">
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" id="male" value="male" name="gender">
+                        <label class="form-check-label" for="male">
+                            Male
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" value="female" id="female" name="gender" checked>
+                        <label class="form-check-label" for="female">
+                            Female
+                        </label>
+                    </div>
+                    <br>
+                    <button class="btn btn-primary" type="submit">Get Nickname</button>
+                </form>
+                <br><br>
+                <span class="alert alert-primary" id="my-nickname"> Nickname Will appear here</span>
+            </div>
         </div>
-    </div>
+                </div>
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
